@@ -27,14 +27,14 @@ Python is used for data cleaning, exploratory analysis, KPI calculation, and val
 
 The project uses the Global Electronics Retailer dataset. The main tables are:
 
-| Table | Purpose |
-|---|---|
-| `Sales` | Order lines, dates, quantities, customers, stores, products, and currency codes |
-| `Products` | Product names, categories, brands, listed prices, and listed costs |
-| `Customers` | Customer demographics and geographic attributes |
-| `Stores` | Store locations, size, opening date, and sales-channel information |
-| `Exchange_Rates` | Daily exchange rates by currency |
-| `Data_Dictionary` | Field definitions and descriptions |
+| Table             | Purpose                                                                         |
+| ----------------- | ------------------------------------------------------------------------------- |
+| `Sales`           | Order lines, dates, quantities, customers, stores, products, and currency codes |
+| `Products`        | Product names, categories, brands, listed prices, and listed costs              |
+| `Customers`       | Customer demographics and geographic attributes                                 |
+| `Stores`          | Store locations, size, opening date, and sales-channel information              |
+| `Exchange_Rates`  | Daily exchange rates by currency                                                |
+| `Data_Dictionary` | Field definitions and descriptions                                              |
 
 The sales table is at **order-line grain**. One order can contain multiple products, so order counts use distinct order numbers rather than counting sales rows.
 
@@ -67,16 +67,16 @@ These are analytical metrics based on listed product prices and costs. Gross pro
 
 The current validation outputs report:
 
-| Metric | Value |
-|---|---:|
-| Revenue | $55,755,479.59 |
-| COGS | $23,092,791.21 |
-| Gross Profit | $32,662,688.38 |
-| Gross Margin | 58.58% |
-| Distinct Orders | 26,326 |
-| Units Sold | 197,757 |
-| Average Order Value | $2,117.89 |
-| Unmatched Product Records | 0 |
+| Metric                    |          Value |
+| ------------------------- | -------------: |
+| Revenue                   | $55,755,479.59 |
+| COGS                      | $23,092,791.21 |
+| Gross Profit              | $32,662,688.38 |
+| Gross Margin              |         58.58% |
+| Distinct Orders           |         26,326 |
+| Units Sold                |        197,757 |
+| Average Order Value       |      $2,117.89 |
+| Unmatched Product Records |              0 |
 
 See [`reports/validation_results.csv`](reports/validation_results.csv) and [`reports/eda_kpi_summary.csv`](reports/eda_kpi_summary.csv).
 
@@ -142,7 +142,6 @@ Detailed evidence and recommendations are available in [`reports/phase_7_validat
 - [`notebooks/03_validate_results.ipynb`](notebooks/03_validate_results.ipynb) — Validation calculations and outputs.
 - [`reports/`](reports/) — KPI summaries, trends, performance reports, validation results, and documented insights.
 - [`tableau/`](tableau/) — Tableau workbook and dashboard screenshots.
-- [`notes.md`](notes.md) — Business requirements, assumptions, and development notes.
 
 ## How to Reproduce the Analysis
 
@@ -162,5 +161,5 @@ The notebooks currently use relative paths such as `../data/cleaned`, so they sh
 **Zohaib Khalid**  
 BS Artificial Intelligence Student | COMSATS University
 
-GitHub: [Zohaib Khalid profile](https://github.com/Zohaib-Khalid49)  
+GitHub: [Zohaib Khalid](https://github.com/Zohaib-Khalid49)  
 Tableau Public: [Interactive dashboard](https://public.tableau.com/views/GlobalElectronicsRetailPerformanceAnalysis/ExecutiveOverview?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
