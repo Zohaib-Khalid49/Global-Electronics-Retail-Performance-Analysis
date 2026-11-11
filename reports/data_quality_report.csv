@@ -1,0 +1,7 @@
+Table,Rows,Columns,Missing Cells,Exact Duplicate Rows
+Customers,15266,10,10,0
+Products,2517,10,0,0
+Sales,62884,9,49719,0
+Stores,67,5,1,0
+Exchange_Rates,11215,3,0,0
+Data_Dictionary,37,3,0,0
